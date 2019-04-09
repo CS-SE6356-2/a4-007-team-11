@@ -6,18 +6,18 @@ public class ShoppingCartTest {
 
 	//test for "When created, the cart has 0 items"
 	@org.junit.Test
-	void createZeroItemsCartTest() {
+	public void createZeroItemsCartTest() {
 		ShoppingCart cart=new ShoppingCart();
 		assertEquals("When created, the cart should have 0 items", 0, cart.getItemCount());
 	}
 	
 	//test for "when empty, the cart has 0 items"
 	@org.junit.Test
-	void cartEmptyZeroItemsTest() {
+	public void cartEmptyZeroItemsTest() {
 		ShoppingCart cart = new ShoppingCart();
 		Product exProduct = new Product("example", 1);
 		cart.addItem(exProduct);
-		cart.removeItem(exProduct);
+		cart.empty(); 
 		
 		assertEquals( "When empty, the cart should have 0 items", 0, cart.getItemCount() );
 	}
@@ -25,7 +25,7 @@ public class ShoppingCartTest {
 	//test for the removeItem() function, ensuring number of items decremented
 	//"When an item is removed, the number of items must be decreased"
 	@org.junit.Test
-	void itemRemovedTest() {
+	public void itemRemovedTest() {
 		ShoppingCart cart1 = new ShoppingCart();
 		ShoppingCart cart2 = new ShoppingCart();
 		Product exProduct = new Product("example", 1);
