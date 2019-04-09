@@ -1,9 +1,9 @@
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
+//Test for ShoppingCart
 public class ShoppingCartTest {
 
 	//test for "When created, the cart has 0 items"
