@@ -7,7 +7,8 @@ class ShoppingCartTest {
 	//test for "When created, the cart has 0 items"
 	@Test
 	void createZeroItemsCartTest() {
-		fail("Not yet implemented");
+		ShoppingCart cart=new ShoppingCart();
+		assertEquals(0,cart.getItemCount());
 	}
 	
 	//test for "when empty, the cart has 0 items"
