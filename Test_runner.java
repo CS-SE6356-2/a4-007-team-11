@@ -10,5 +10,12 @@ public class Test_runner {
 		}
 	
 		System.out.println(result.wasSuccessful());
+		
+		Result productResult = JUnitCore.runClasses(ProductTest.class);
+		for(Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+	
+		System.out.println(productResult.wasSuccessful());
 	}
 }
