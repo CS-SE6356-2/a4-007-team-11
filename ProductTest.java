@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ProductTest {
+public class ProductTest {
 
 	//test for "When a new product is added, the number of items must be incremented"
 	@Test
